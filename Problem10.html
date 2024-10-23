@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "header header"
+                "left right";
+            gap: 10px;
+        }
+
+        .box1 {
+            grid-area: header;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+
+        .box2 {
+            grid-area: subheader;
+            background-color: pink;
+            color: black;
+            text-align: center;
+        }
+
+        .box3 {
+            grid-area: left;
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+
+        .box4 {
+            grid-area: right;
+            background-color: brown;
+            color: white;
+            text-align: center;
+        }
+
+        
+        .subheader {
+            grid-area: subheader;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">4</div>
+        <div class="box2">6</div>
+        <div class="box3">1</div>
+        <div class="box4">5</div>
+    </div>
+</body>
+</html>
